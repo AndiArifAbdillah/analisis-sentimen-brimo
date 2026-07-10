@@ -1,0 +1,10 @@
+# Duplikat berkas submission (isi sama dengan root repo)
+submission_analisis_sentimen/
+submission_analisis_sentimen.zip
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
