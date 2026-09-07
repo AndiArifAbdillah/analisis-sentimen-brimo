@@ -25,13 +25,33 @@ negatif secara keliru. Proyek ini menangani hal tersebut dengan **memprioritaska
 untuk kata ganda dan **menetralkan kata domain aplikasi** yang tidak bermakna sentimen
 (mis. `aplikasi` berbobot −4 di InSet). Detail di bagian 4 notebook.
 
+## 📚 Panduan Belajar
+
+Repo ini dilengkapi materi belajar berbahasa Indonesia yang membedah proyek dari fundamental
+sampai detail setiap keputusan teknis — cocok untuk yang ingin memahami isinya, bukan sekadar
+menjalankannya:
+
+| Modul | Topik |
+|---|---|
+| [01](docs/01-dasar-analisis-sentimen.md) | Dasar analisis sentimen, supervised learning, alur proyek |
+| [02](docs/02-scraping-data.md) | Scraping Play Store, pagination, kenapa deduplikasi penting |
+| [03](docs/03-preprocessing-teks.md) | 5 tahap preprocessing, kenapa kata negasi dipertahankan |
+| [04](docs/04-pelabelan-lexicon.md) | Pelabelan lexicon InSet + studi kasus bug 1.142 kata ganda |
+| [05](docs/05-ekstraksi-fitur.md) | TF-IDF vs Embedding, data leakage, padding |
+| [06](docs/06-model-dan-pelatihan.md) | Cara kerja SVM, Random Forest, BiLSTM + tiap hyperparameter |
+| [07](docs/07-evaluasi-dan-inference.md) | Precision/recall/f1, kenapa kelas netral tersulit, inference |
+| [08](docs/08-latihan-dan-uji-pemahaman.md) | 14 soal uji pemahaman + 7 eksperimen praktik |
+
+→ Mulai dari [daftar isi lengkap](docs/README.md)
+
 ## Struktur Proyek
 
 ```
 ├── notebook_analisis_sentimen.ipynb   # Notebook utama (sudah dieksekusi, output lengkap)
 ├── scraping_playstore.py              # Script scraping ulasan Play Store
 ├── ulasan_brimo.csv                   # Dataset hasil scraping
-└── requirements.txt                   # Dependensi
+├── requirements.txt                   # Dependensi
+└── docs/                              # Materi belajar 8 modul
 ```
 
 ## Cara Menjalankan
